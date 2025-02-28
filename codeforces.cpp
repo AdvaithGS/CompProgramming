@@ -1,32 +1,71 @@
 #include <bits/stdc++.h>
-#define f(a,b,c) for (auto a = b; a != c;a++)
-#define vec(a) std::vector<a>
-#define inpvec(a,b) f(i,0,a){decltype(b)::value_type x; std::cin >> x;b.push_back(x);}  
-#define inp(a) std::cin >> a;
-#define printvec(a) for(auto i : a){std::cout << i  <<  ' ';};std::cout << '\n';
-#define print(a) std::cout << a << '\n';
-
-int test(std::string str, int n){
-  if(n == str.length()){
-    return 0;
-  }
-  int i = n;
-  while(i!=str.length()  && str[i]== '0'){
-    i++;
-  }
-  if(i == str.length()){return 0;}
-  return 1 + 
+using namespace std;
+ 
+// Returns true if x is a perfect square.
+inline bool isPerfectSquare(long long x) {
+    long long r = (long long)floor(sqrt(x));
+    return r * r == x;
 }
-
+ 
 int main(){
-  int t;
-  std::cin >> t;
-  f(t_,0,t){
-    int n;
-    inp(n);
-    std::cin >> n;
-    std::string str;
-    inp(str);
-    test(str,0);
-  }
+    // ios::sync_with_stdio(false);
+    // cin.tie(nullptr);
+ 
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        // If the total sum is a perfect square, no valid permutation exists.
+        long long total = (long long)n * (n + 1) / 2;
+        if(isPerfectSquare(total)){
+            cout << -1 << "\n";
+            continue;
+        }
+ 
+        // Start with the identity permutation.
+        vector<int> p(n);
+        for (int i = 0; i < n; i++){
+            p[i] = i + 1;
+        }
+ 
+        long long prefix = 0;
+        // Process the permutation and fix any prefix whose sum is a perfect square.
+        for (int i = 0; i < n; i++){
+            prefix += p[i];
+            if(isPerfectSquare(prefix)){
+                // If possible, swap with the next element.
+                if(i + 1 < n){
+                    // Adjust the prefix: subtract the current element and add the next.
+                    prefix = prefix - p[i] + p[i+1];
+                    swap(p[i], p[i+1]);
+                } else {
+                    // For the last element, swap with the previous element.
+                    prefix = prefix - p[i] + p[i-1];
+                    swap(p[i], p[i-1]);
+                }
+            }
+        }
+ 
+        // (Optional) Verify all prefix sums are not perfect squares.
+        prefix = 0;
+        bool valid = true;
+        for (int i = 0; i < n; i++){
+            prefix += p[i];
+            if(isPerfectSquare(prefix)){
+                valid = false;
+                break;
+            }
+        }
+ 
+        if(!valid){
+            cout << -1 << "\n";
+        } else {
+            for (int i = 0; i < n; i++){
+                cout << p[i] << " ";
+            }
+            cout << "\n";
+        }
+    }
+    return 0;
 }

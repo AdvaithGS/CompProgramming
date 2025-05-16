@@ -6,6 +6,14 @@
 #define printvec(a) for(auto i : a){std::cout << i  <<  ' ';};std::cout << '\n';
 #define print(a) std::cout << a << '\n';
 
+using namespace std;
+
+long long sum(vector<int> vec, long long n = 0 ){
+  for(auto i: vec){
+    n += i;
+  }
+  return n;
+}
 
 int main(){
   int t;

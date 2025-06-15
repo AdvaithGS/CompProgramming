@@ -20,7 +20,6 @@ public:
     bool canJump(vector<int>& nums) {
         int i = 0, r = nums[0];
         while(i != nums.size()-1 && i <= r){
-            print(r);
             r = max(r,i+nums[i]);
             i++;
         }

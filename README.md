@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/AdvaithGS/CompProgramming/tree/master/0053-maximum-subarray) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/AdvaithGS/CompProgramming/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Two Pointers
 |  |
@@ -16,6 +17,7 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 ## Dynamic Programming
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/AdvaithGS/CompProgramming/tree/master/0053-maximum-subarray) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/AdvaithGS/CompProgramming/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Bit Manipulation
 |  |
@@ -29,4 +31,8 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 |  |
 | ------- |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/AdvaithGS/CompProgramming/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/AdvaithGS/CompProgramming/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->

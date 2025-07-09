@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/AdvaithGS/CompProgramming/tree/master/0005-longest-palindromic-substring) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/AdvaithGS/CompProgramming/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Binary Search
 |  |
@@ -17,6 +18,7 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/AdvaithGS/CompProgramming/tree/master/0005-longest-palindromic-substring) |
 | [0053-maximum-subarray](https://github.com/AdvaithGS/CompProgramming/tree/master/0053-maximum-subarray) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/AdvaithGS/CompProgramming/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 ## Bit Manipulation
@@ -35,4 +37,8 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/AdvaithGS/CompProgramming/tree/master/0053-maximum-subarray) |
+## String
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/AdvaithGS/CompProgramming/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
